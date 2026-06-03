@@ -108,7 +108,7 @@ export default function FasilitasClient() {
             </Reveal>
             <Reveal direction="up" delay={0.1}>
               <h3 className="mt-2 text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">
-                Jelajahi Fasilitas Kampus
+                Jelajahi Fasilitas Sekolah
               </h3>
             </Reveal>
             <Reveal direction="up" delay={0.2}>
@@ -177,7 +177,7 @@ export default function FasilitasClient() {
                 </div>
                 
                 <h3 className="text-xl sm:text-3xl font-extrabold tracking-tight">
-                  360° Virtual Tour Kampus
+                  360° Virtual Tour Sekolah
                 </h3>
                 
                 <p className="mt-2 text-xs sm:text-sm text-white/70 max-w-md leading-relaxed">

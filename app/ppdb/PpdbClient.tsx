@@ -480,7 +480,7 @@ export default function PpdbClient() {
                       id="originSchool"
                       type="text"
                       {...register("originSchool")}
-                      placeholder="Contoh: TK Tunas Bangsa 1"
+                      placeholder="Contoh: TK Bustanuddin 1"
                       className={`w-full px-4 py-3 text-sm rounded-xl border bg-bgLight dark:bg-zinc-850 dark:text-white outline-none transition-all ${
                         errors.originSchool ? "border-red-500 focus:border-red-500" : "border-gray-200 focus:border-accent"
                       }`}
@@ -755,7 +755,7 @@ export default function PpdbClient() {
             <div className="mt-8">
               <a
                 href={`https://wa.me/${schoolInfo.whatsapp}?text=${encodeURIComponent(
-                  "Halo helpdesk PPDB SD Tunas Bangsa, saya membutuhkan bantuan terkait pendaftaran online..."
+                  "Halo helpdesk PPDB SD Bustanuddin, saya membutuhkan bantuan terkait pendaftaran online..."
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

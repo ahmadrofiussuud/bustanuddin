@@ -225,7 +225,7 @@ export default function Home() {
     {
       icon: <ShieldCheck className="h-6 w-6 text-accent" />,
       title: "Lingkungan Kondusif",
-      description: "Kampus yang asri, sejuk, bebas polusi suara, dilengkapi sistem keamanan CCTV 24 jam untuk ketenangan belajar.",
+      description: "Sekolah yang asri, sejuk, bebas polusi suara, dilengkapi sistem keamanan CCTV 24 jam untuk ketenangan belajar.",
     },
     {
       icon: <Award className="h-6 w-6 text-accent" />,
@@ -275,7 +275,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero-bg.jpg"
-            alt="SD Tunas Bangsa Campus Building"
+            alt="SD Bustanuddin Campus Building"
             fill
             priority
             className="object-cover object-center scale-105 select-none"

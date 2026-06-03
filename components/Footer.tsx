@@ -32,7 +32,7 @@ export default function Footer() {
                 href={schoolInfo.socials.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram SD Tunas Bangsa"
+                aria-label="Instagram SD Bustanuddin"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-200 hover:bg-accent hover:text-white"
               >
                 <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +43,7 @@ export default function Footer() {
                 href={schoolInfo.socials.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="YouTube SD Tunas Bangsa"
+                aria-label="YouTube SD Bustanuddin"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-200 hover:bg-accent hover:text-white"
               >
                 <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +54,7 @@ export default function Footer() {
                 href={schoolInfo.socials.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Facebook SD Tunas Bangsa"
+                aria-label="Facebook SD Bustanuddin"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-200 hover:bg-accent hover:text-white"
               >
                 <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

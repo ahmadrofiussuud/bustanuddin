@@ -133,7 +133,7 @@ export default function KontakClient() {
             {/* Quick Card 1: WhatsApp */}
             <Reveal direction="up">
               <a
-                href={`https://wa.me/${schoolInfo.whatsapp}?text=Halo%20Admin%20SD%20Tunas%20Bangsa...`}
+                href={`https://wa.me/${schoolInfo.whatsapp}?text=Halo%20Admin%20SD%20Bustanuddin...`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center p-6 bg-white rounded-2xl border border-gray-150 shadow-sm hover:border-[#25D366]/40 hover:shadow-md transition-all gap-4 dark:bg-zinc-900 dark:border-zinc-800"
@@ -229,7 +229,7 @@ export default function KontakClient() {
                   <div className="flex gap-4 items-start">
                     <MapPin className="h-5 w-5 text-accent shrink-0 mt-1" />
                     <div>
-                      <h4 className="text-xs uppercase font-extrabold tracking-wide text-textLight/45 dark:text-zinc-500">Alamat Fisik Kampus</h4>
+                      <h4 className="text-xs uppercase font-extrabold tracking-wide text-textLight/45 dark:text-zinc-500">Alamat Fisik Sekolah</h4>
                       <p className="text-sm font-semibold text-primary dark:text-zinc-300 leading-relaxed mt-1">{schoolInfo.address}</p>
                     </div>
                   </div>
@@ -255,7 +255,7 @@ export default function KontakClient() {
               <Reveal direction="right" delay={0.05}>
                 <div className="w-full h-80 rounded-3xl overflow-hidden border border-gray-150/45 shadow-sm">
                   <iframe
-                    title="Peta Lokasi Google Maps SD Tunas Bangsa"
+                    title="Peta Lokasi Google Maps SD Bustanuddin"
                     src={schoolInfo.googleMapsEmbed}
                     width="100%"
                     height="100%"

@@ -1,16 +1,16 @@
-// Global configurations and mockup data for SD Tunas Bangsa
+// Global configurations and mockup data for SD Bustanuddin
 
 export const schoolInfo = {
   name: "SD Bustanuddin",
   shortName: "Bustanuddin",
   tagline: "Cerdas, Berakhlak Mulia, Berkarakter Sejak Dini",
   foundedYear: 2006,
-  accreditation: "A (Sangat Baik)",
+  accreditation: "B (Baik)",
   email: "info@sdbustanuddin.sch.id",
-  phone: "(021) 555-0195",
-  whatsapp: "6281234567890", // International format without "+"
+  phone: "081234899918",
+  whatsapp: "6281234899918", // International format without "+"
   whatsappMessage: "Halo SD Bustanuddin, saya ingin menanyakan informasi pendaftaran siswa baru.",
-  address: "Jl. Raya Bustanuddin No. 45, Pamekasan, Madura, Jawa Timur 69311",
+  address: "sekolah dasar swasta yang berlokasi di Jl. KH. Bustami, Desa Galis, Kecamatan Galis, Kabupaten Pamekasan, Provinsi Jawa Timur",
   hours: [
     { days: "Senin - Kamis", time: "07:00 - 13:00" },
     { days: "Jumat", time: "07:00 - 11:30" },
@@ -44,16 +44,16 @@ export const stats = [
 export const mockNews = [
   {
     id: "news-1",
-    title: "Siswa SD Tunas Bangsa Meraih Medali Emas Olimpiade Sains Nasional SD 2026",
+    title: "Siswa SD Bustanuddin Meraih Medali Emas Olimpiade Sains Nasional SD 2026",
     category: "Prestasi",
     date: "1 Juni 2026",
-    excerpt: "Prestasi membanggakan kembali diukir oleh siswa SD Tunas Bangsa di ajang Olimpiade Sains Nasional (OSN) tingkat nasional dalam bidang Matematika...",
+    excerpt: "Prestasi membanggakan kembali diukir oleh siswa SD Bustanuddin di ajang Olimpiade Sains Nasional (OSN) tingkat nasional dalam bidang Matematika...",
     image: "https://images.unsplash.com/photo-1518152006812-edab29b069ac?q=80&w=800&auto=format&fit=crop",
     slug: "prestasi-olimpiade-sains-nasional-sd"
   },
   {
     id: "news-2",
-    title: "Pelepasan dan Wisuda Kelulusan Kelas VI Angkatan XXX SD Tunas Bangsa",
+    title: "Pelepasan dan Wisuda Kelulusan Kelas VI Angkatan XXX SD Bustanuddin",
     category: "Kegiatan",
     date: "28 Mei 2026",
     excerpt: "Acara kelulusan dan pelepasan siswa kelas VI angkatan 30 berlangsung dengan penuh keceriaan dan haru dihadiri oleh seluruh wali murid serta komite...",
@@ -62,10 +62,10 @@ export const mockNews = [
   },
   {
     id: "news-3",
-    title: "SD Tunas Bangsa Gelar Sosialisasi PPDB Tahun Ajaran 2026/2027",
+    title: "SD Bustanuddin Gelar Sosialisasi PPDB Tahun Ajaran 2026/2027",
     category: "Pendaftaran",
     date: "15 Mei 2026",
-    excerpt: "Menjelang tahun ajaran baru, SD Tunas Bangsa menyelenggarakan kegiatan open house serta pemaparan jalur pendaftaran siswa baru untuk transisi PAUD-SD...",
+    excerpt: "Menjelang tahun ajaran baru, SD Bustanuddin menyelenggarakan kegiatan open house serta pemaparan jalur pendaftaran siswa baru untuk transisi PAUD-SD...",
     image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=800&auto=format&fit=crop",
     slug: "sosialisasi-ppdb-sd-2026"
   }
@@ -76,14 +76,14 @@ export const mockTestimonials = [
     id: "testi-1",
     name: "Budi Santoso",
     role: "Orang Tua Siswa (Wali Murid Kelas III)",
-    content: "Sangat bersyukur menyekolahkan anak saya di SD Tunas Bangsa. Selain unggul dalam pembentukan calistung dasar, sekolah ini juga sangat fokus pada pengembangan akhlak anak sejak dini.",
+    content: "Sangat bersyukur menyekolahkan anak saya di SD Bustanuddin. Selain unggul dalam pembentukan calistung dasar, sekolah ini juga sangat fokus pada pengembangan akhlak anak sejak dini.",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop"
   },
   {
     id: "testi-2",
     name: "Dr. Siti Rahmawati",
     role: "Alumni 2010 (Dokter Anak)",
-    content: "Pondasi kedisiplinan, kejujuran, dan pembiasaan ibadah yang diajarkan sejak di SD Tunas Bangsa sangat membantu membentuk integritas diri saya hingga kini.",
+    content: "Pondasi kedisiplinan, kejujuran, dan pembiasaan ibadah yang diajarkan sejak di SD Bustanuddin sangat membantu membentuk integritas diri saya hingga kini.",
     avatar: "https://images.unsplash.com/photo-1594824813573-246434de83fb?q=80&w=150&auto=format&fit=crop"
   },
   {
@@ -97,7 +97,7 @@ export const mockTestimonials = [
     id: "testi-4",
     name: "Dewi Lestari",
     role: "Alumni & Orang Tua Siswa",
-    content: "Sebagai alumni yang sekarang menitipkan pendidikan dasar anak saya di sini, saya melihat Tunas Bangsa terus berkembang pesat tanpa kehilangan jati diri kesopanan dan budi pekerti luhur.",
+    content: "Sebagai alumni yang sekarang menitipkan pendidikan dasar anak saya di sini, saya melihat Bustanuddin terus berkembang pesat tanpa kehilangan jati diri kesopanan dan budi pekerti luhur.",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150&auto=format&fit=crop"
   }
 ];
@@ -106,12 +106,12 @@ export const sejarahTimeline = [
   {
     year: "2006",
     title: "Pendirian Sekolah Dasar",
-    description: "Diresmikan oleh Yayasan Pendidikan Tunas Bangsa dengan program PAUD dan kelas I-III di awal pendirian."
+    description: "Diresmikan oleh Yayasan Pendidikan Bustanuddin dengan program PAUD dan kelas I-III di awal pendirian."
   },
   {
     year: "2002",
-    title: "Akreditasi A Pertama",
-    description: "Meraih predikat Akreditasi A (Sangat Baik) dari BAN-S/M setelah audit kelayakan sarana bermain ramah anak dan kurikulum dasar."
+    title: "Akreditasi B Pertama",
+    description: "Meraih predikat Akreditasi B (Baik) dari BAN-S/M setelah audit kelayakan sarana bermain ramah anak dan kurikulum dasar."
   },
   {
     year: "2010",
@@ -295,7 +295,7 @@ export const prestasiAkademik = [
   {
     year: "2025",
     title: "Juara 2 Dokter Kecil Tingkat Kota",
-    student: "Tim UKS Tunas Bangsa",
+    student: "Tim UKS Bustanuddin",
     desc: "Mendapat penghargaan atas presentasi kebersihan sanitasi dan pencegahan DBD sekolah."
   },
   {
@@ -379,16 +379,16 @@ export const fasilitasList = [
 export const beritaPageList = [
   {
     id: "news-1",
-    title: "Siswa SD Tunas Bangsa Meraih Medali Emas Olimpiade Sains Nasional SD 2026",
+    title: "Siswa SD Bustanuddin Meraih Medali Emas Olimpiade Sains Nasional SD 2026",
     category: "Berita",
     date: "1 Juni 2026",
-    excerpt: "Prestasi membanggakan kembali diukir oleh siswa SD Tunas Bangsa di ajang Olimpiade Sains Nasional (OSN) tingkat nasional dalam bidang Matematika...",
+    excerpt: "Prestasi membanggakan kembali diukir oleh siswa SD Bustanuddin di ajang Olimpiade Sains Nasional (OSN) tingkat nasional dalam bidang Matematika...",
     image: "https://images.unsplash.com/photo-1518152006812-edab29b069ac?q=80&w=800&auto=format&fit=crop",
     slug: "prestasi-olimpiade-sains-nasional-sd"
   },
   {
     id: "news-2",
-    title: "Pelepasan dan Wisuda Kelulusan Kelas VI Angkatan XXX SD Tunas Bangsa",
+    title: "Pelepasan dan Wisuda Kelulusan Kelas VI Angkatan XXX SD Bustanuddin",
     category: "Berita",
     date: "28 Mei 2026",
     excerpt: "Acara kelulusan dan pelepasan siswa kelas VI angkatan 30 berlangsung dengan penuh keceriaan dan haru dihadiri oleh seluruh wali murid serta komite...",
@@ -397,10 +397,10 @@ export const beritaPageList = [
   },
   {
     id: "news-3",
-    title: "SD Tunas Bangsa Gelar Sosialisasi PPDB Tahun Ajaran 2026/2027",
+    title: "SD Bustanuddin Gelar Sosialisasi PPDB Tahun Ajaran 2026/2027",
     category: "Pengumuman",
     date: "15 Mei 2026",
-    excerpt: "Menjelang tahun ajaran baru, SD Tunas Bangsa menyelenggarakan kegiatan open house serta pemaparan jalur pendaftaran siswa baru untuk transisi PAUD-SD...",
+    excerpt: "Menjelang tahun ajaran baru, SD Bustanuddin menyelenggarakan kegiatan open house serta pemaparan jalur pendaftaran siswa baru untuk transisi PAUD-SD...",
     image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=800&auto=format&fit=crop",
     slug: "sosialisasi-ppdb-sd-2026"
   },
@@ -409,7 +409,7 @@ export const beritaPageList = [
     title: "Rapat Koordinasi POMG Semester Genap Tahun Ajaran 2025/2026",
     category: "Agenda",
     date: "10 Mei 2026",
-    excerpt: "Undangan koordinasi akhir semester persatuan orang tua murid dan guru (POMG) terkait kegiatan liburan edukasi serta persiapan tahun ajaran baru...",
+    excerpt: "Undangan koordinasi akhir semester persatuan orang tua murid and guru (POMG) terkait kegiatan liburan edukasi serta persiapan tahun ajaran baru...",
     image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
     slug: "rapat-pomg-semester-genap"
   },
@@ -424,7 +424,7 @@ export const beritaPageList = [
   },
   {
     id: "news-6",
-    title: "Tim Futsal Anak SD Tunas Bangsa Juara 1 Turnamen U-12 Antar SD",
+    title: "Tim Futsal Anak SD Bustanuddin Juara 1 Turnamen U-12 Antar SD",
     category: "Berita",
     date: "25 April 2026",
     excerpt: "Kabar gembira datang dari lapangan futsal, tim sepakbola kategori umur 12 tahun sekolah berhasil meraih juara satu turnamen piala dinas pendidikan kota...",
@@ -490,6 +490,6 @@ export const ppdbFAQs = [
   },
   {
     q: "Bagaimana cara berkonsultasi mengenai tata cara pendaftaran?",
-    a: "Bapak/Ibu wali murid dapat menghubungi helpdesk PPDB online kami melalui chat WhatsApp di nomor (0812-3456-7890) pada hari kerja Senin-Jumat pukul 07:00-13:00."
+    a: "Bapak/Ibu wali murid dapat menghubungi helpdesk PPDB online kami melalui chat WhatsApp di nomor (0812-3489-9918) pada hari kerja Senin-Jumat pukul 07:00-13:00."
   }
 ];

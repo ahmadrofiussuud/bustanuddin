@@ -87,7 +87,7 @@ export default function AboutClient() {
             </Reveal>
             <Reveal direction="up" delay={0.2}>
               <p className="mt-4 text-sm sm:text-base text-textLight/70 leading-relaxed">
-                Didirikan sejak tahun {schoolInfo.foundedYear}, SD Tunas Bangsa terus berkembang dari sebuah sekolah rintisan lokal hingga menjadi salah satu lembaga pendidikan rujukan dengan akreditasi tertinggi.
+                Didirikan sejak tahun {schoolInfo.foundedYear}, SD Bustanuddin terus berkembang dari sebuah sekolah rintisan lokal hingga menjadi salah satu lembaga pendidikan rujukan dengan akreditasi tertinggi.
               </p>
             </Reveal>
           </div>
@@ -150,7 +150,7 @@ export default function AboutClient() {
                   </p>
                 </div>
                 <div className="mt-10 border-t border-white/10 pt-6">
-                  <span className="text-xs uppercase text-accent font-semibold tracking-wider">SD Tunas Bangsa</span>
+                  <span className="text-xs uppercase text-accent font-semibold tracking-wider">SD Bustanuddin</span>
                 </div>
               </div>
             </Reveal>
@@ -382,9 +382,8 @@ export default function AboutClient() {
               <div className="flex flex-col items-center">
                 <GraduationCap className="h-10 w-10 text-primary mb-2" />
                 <h4 className="text-xs tracking-widest uppercase text-textLight/40 font-bold">Kementerian Pendidikan R.I.</h4>
-                
-                <h5 className="mt-4 text-2xl font-black text-primary leading-none uppercase">Predikat &ldquo;A&rdquo;</h5>
-                <span className="text-[10px] text-accent font-bold uppercase tracking-wider mt-1">Sangat Baik (97.00/100.00)</span>
+                <h5 className="mt-4 text-2xl font-black text-primary leading-none uppercase">Predikat &ldquo;B&rdquo;</h5>
+                <span className="text-[10px] text-accent font-bold uppercase tracking-wider mt-1">Baik</span>
                 
                 <hr className="w-full my-4 border-gray-100" />
                 

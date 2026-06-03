@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Sejarah SD Bustanuddin",
     "Visi Misi SD",
     "Struktur Organisasi Sekolah Dasar",
-    "Kepala Sekolah Tunas Bangsa",
+    "Kepala Sekolah Bustanuddin",
     "Akreditasi SD Bustanuddin",
   ],
 };
