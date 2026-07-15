@@ -729,7 +729,7 @@ export default function Home() {
                 {/* Top Image */}
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=600&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=600&auto=format&fit=crop"
                     alt="Fase B"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />

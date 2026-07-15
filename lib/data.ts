@@ -77,7 +77,7 @@ export const mockTestimonials = [
     name: "Budi Santoso",
     role: "Orang Tua Siswa (Wali Murid Kelas III)",
     content: "Sangat bersyukur menyekolahkan anak saya di SD Bustanuddin. Selain unggul dalam pembentukan calistung dasar, sekolah ini juga sangat fokus pada pengembangan akhlak anak sejak dini.",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop"
+    avatar: "https://images.unsplash.com/photo-1607990283143-e81e7a2c93ab?q=80&w=150&auto=format&fit=crop"
   },
   {
     id: "testi-2",
@@ -91,7 +91,7 @@ export const mockTestimonials = [
     name: "Rendra Kusuma",
     role: "Orang Tua Siswa (Wali Murid Kelas I)",
     content: "Fasilitas bermain (playground) sangat aman dan asri. Anak saya tidak merasa takut saat transisi dari TK ke SD karena metode pembelajarannya menyenangkan.",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=150&auto=format&fit=crop"
+    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=150&auto=format&fit=crop"
   },
   {
     id: "testi-4",
@@ -169,37 +169,37 @@ export const timKepemimpinan = [
   {
     name: "Dr. H. Ahmad Sunaryo, M.Pd.",
     role: "Kepala Sekolah",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=250&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1607990283143-e81e7a2c93ab?q=80&w=250&auto=format&fit=crop",
     bio: "Berpengalaman lebih dari 25 tahun mengelola pendidikan dasar dasar. Berdedikasi mencetak generasi berkarakter sejak dini."
   },
   {
     name: "Dra. Hajah Martini",
     role: "Wakasek Bidang Kurikulum",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=250&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1594824813573-246434de83fb?q=80&w=250&auto=format&fit=crop",
     bio: "Perancang transisi metode PAUD-SD menyenangkan dan koordinator implementasi Kurikulum Merdeka SD."
   },
   {
     name: "Drs. M. Ridwan, M.Si.",
     role: "Wakasek Bidang Kesiswaan",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=250&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=250&auto=format&fit=crop",
     bio: "Fokus pada pembinaan akhlak anak, pembentukan karakter Pramuka Siaga, dokter kecil, dan minat bakat seni."
   },
   {
     name: "Budi Hermawan, S.T.",
     role: "Wakasek Bidang Sarana & Prasarana",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=250&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=250&auto=format&fit=crop",
     bio: "Bertanggung jawab atas pemeliharaan area bermain (playground), keasrian kelas ber-AC, dan keamanan sekolah."
   },
   {
     name: "Siti Aisyah, S.Sos.",
     role: "Wakasek Bidang Hubungan Masyarakat",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=250&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1580894732444-8fecef2271d4?q=80&w=250&auto=format&fit=crop",
     bio: "Menjembatani kemitraan erat dengan persatuan orang tua siswa (POMG) demi menyelaraskan pendidikan rumah-sekolah."
   },
   {
     name: "Haji Rahman Effendi, M.M.",
     role: "Kepala Tata Usaha",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=250&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?q=80&w=250&auto=format&fit=crop",
     bio: "Mengelola urusan administrasi rapor siswa, data pokok pendidikan (Dapodik), dan layanan administrasi PPDB."
   }
 ];
