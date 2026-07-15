@@ -10,7 +10,6 @@ import {
   MapPin,
   Mail,
   Phone,
-  GraduationCap,
 } from "lucide-react";
 import { navLinks, schoolInfo } from "@/lib/data";
 
@@ -145,8 +144,12 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group shrink-0">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary-light shadow-md shadow-primary/20 text-white transition-transform duration-300 group-hover:scale-105">
-                <GraduationCap className="h-6 w-6 text-accent" />
+              <div className="relative h-10 w-10 overflow-hidden transition-transform duration-300 group-hover:scale-105">
+                <img
+                  src="/logo.png"
+                  alt="SD Bustanuddin"
+                  className="h-full w-full object-contain"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="font-sans text-xl font-extrabold tracking-tight text-primary transition-colors duration-300 group-hover:text-accent md:text-2xl leading-none">

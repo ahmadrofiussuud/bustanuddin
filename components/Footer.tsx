@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { GraduationCap, MapPin, Phone, Mail, Clock, ArrowRight } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ArrowRight } from "lucide-react";
 import { navLinks, schoolInfo, mockNews } from "@/lib/data";
 
 // Custom SVG Social Icons
@@ -45,8 +45,12 @@ export default function Footer() {
           {/* Column 1: School Branding & Social Info */}
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2.5 group">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent text-white shadow-md shadow-accent/20">
-                <GraduationCap className="h-6 w-6 text-white" />
+              <div className="relative h-11 w-11 overflow-hidden transition-transform duration-300 group-hover:scale-105">
+                <img
+                  src="/logo.png"
+                  alt="SD Bustanuddin"
+                  className="h-full w-full object-contain"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="font-sans text-xl font-extrabold tracking-tight text-white leading-none">

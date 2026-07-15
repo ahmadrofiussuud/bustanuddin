@@ -76,7 +76,7 @@ export default function BeritaClient() {
     <div className="w-full flex flex-col">
       
       {/* 1. PAGE HERO */}
-      <section className="relative bg-gradient-to-r from-primary via-primary-dark to-secondary text-white py-16 sm:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-r from-primary via-primary-dark to-secondary text-white py-20 sm:py-28 overflow-hidden rounded-b-[40px] md:rounded-b-[80px] shadow-lg shadow-primary/10">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#d8f3dc_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center sm:text-left">
           <Reveal direction="down">

@@ -268,77 +268,74 @@ export default function Home() {
           2. OVERLAPPING FEATURE CARDS
           ========================================== */}
       <section className="relative z-30 -mt-24 lg:-mt-28 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div 
-          className="flex overflow-x-auto snap-x snap-mandatory pb-6 gap-6 -mx-4 px-4 md:mx-0 md:px-0 md:pb-0 md:grid md:grid-cols-2 lg:grid-cols-4" 
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        >
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
           {/* Card 1 */}
-          <div className="shrink-0 w-[280px] sm:w-[320px] md:w-auto snap-center bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div className="bg-white rounded-2xl lg:rounded-3xl p-4 lg:p-8 shadow-md lg:shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1 z-10">
             <div className="flex justify-between items-start">
-              <div className="h-12 w-12 rounded-2xl bg-lightAccent text-primary flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors duration-300">
-                <GraduationCap className="h-6 w-6" />
+              <div className="h-10 w-10 lg:h-12 lg:w-12 rounded-xl lg:rounded-2xl bg-lightAccent text-primary flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                <GraduationCap className="h-5 w-5 lg:h-6 lg:w-6" />
               </div>
-              <span className="text-3xl font-extrabold text-primary/15 tracking-tight">01</span>
+              <span className="text-xl lg:text-3xl font-extrabold text-primary/15 tracking-tight">01</span>
             </div>
-            <div className="mt-6">
-              <h3 className="text-lg font-extrabold text-primary group-hover:text-accent transition-colors duration-200">
+            <div className="mt-4 lg:mt-6">
+              <h3 className="text-xs sm:text-sm lg:text-lg font-extrabold text-primary group-hover:text-accent transition-colors duration-200">
                 Fasilitas Beasiswa
               </h3>
-              <p className="mt-2.5 text-sm text-textLight/80 leading-relaxed">
+              <p className="hidden lg:block mt-2.5 text-sm text-textLight/80 leading-relaxed">
                 Pemberian dukungan beasiswa bagi siswa yang berprestasi baik di bidang akademik maupun keagamaan (tahfidz).
               </p>
             </div>
           </div>
 
           {/* Card 2 */}
-          <div className="shrink-0 w-[280px] sm:w-[320px] md:w-auto snap-center bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div className="bg-white rounded-2xl lg:rounded-3xl p-4 lg:p-8 shadow-md lg:shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1 z-10">
             <div className="flex justify-between items-start">
-              <div className="h-12 w-12 rounded-2xl bg-lightAccent text-primary flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors duration-300">
-                <Presentation className="h-6 w-6" />
+              <div className="h-10 w-10 lg:h-12 lg:w-12 rounded-xl lg:rounded-2xl bg-lightAccent text-primary flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                <Presentation className="h-5 w-5 lg:h-6 lg:w-6" />
               </div>
-              <span className="text-3xl font-extrabold text-primary/15 tracking-tight">02</span>
+              <span className="text-xl lg:text-3xl font-extrabold text-primary/15 tracking-tight">02</span>
             </div>
-            <div className="mt-6">
-              <h3 className="text-lg font-extrabold text-primary group-hover:text-accent transition-colors duration-200">
+            <div className="mt-4 lg:mt-6">
+              <h3 className="text-xs sm:text-sm lg:text-lg font-extrabold text-primary group-hover:text-accent transition-colors duration-200">
                 Guru Profesional
               </h3>
-              <p className="mt-2.5 text-sm text-textLight/80 leading-relaxed">
+              <p className="hidden lg:block mt-2.5 text-sm text-textLight/80 leading-relaxed">
                 Tenaga pendidik tersertifikasi nasional yang ramah, penyabar, serta berdedikasi membina potensi bakat anak.
               </p>
             </div>
           </div>
 
           {/* Card 3 */}
-          <div className="shrink-0 w-[280px] sm:w-[320px] md:w-auto snap-center bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div className="bg-white rounded-2xl lg:rounded-3xl p-4 lg:p-8 shadow-md lg:shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1 z-10">
             <div className="flex justify-between items-start">
-              <div className="h-12 w-12 rounded-2xl bg-lightAccent text-primary flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors duration-300">
-                <Library className="h-6 w-6" />
+              <div className="h-10 w-10 lg:h-12 lg:w-12 rounded-xl lg:rounded-2xl bg-lightAccent text-primary flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                <Library className="h-5 w-5 lg:h-6 lg:w-6" />
               </div>
-              <span className="text-3xl font-extrabold text-primary/15 tracking-tight">03</span>
+              <span className="text-xl lg:text-3xl font-extrabold text-primary/15 tracking-tight">03</span>
             </div>
-            <div className="mt-6">
-              <h3 className="text-lg font-extrabold text-primary group-hover:text-accent transition-colors duration-200">
+            <div className="mt-4 lg:mt-6">
+              <h3 className="text-xs sm:text-sm lg:text-lg font-extrabold text-primary group-hover:text-accent transition-colors duration-200">
                 Perpustakaan Lengkap
               </h3>
-              <p className="mt-2.5 text-sm text-textLight/80 leading-relaxed">
+              <p className="hidden lg:block mt-2.5 text-sm text-textLight/80 leading-relaxed">
                 Ribuan koleksi buku cerita bergambar, ensiklopedia sains, dan area audio-visual ramah anak ber-AC.
               </p>
             </div>
           </div>
 
           {/* Card 4 */}
-          <div className="shrink-0 w-[280px] sm:w-[320px] md:w-auto snap-center bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div className="bg-white rounded-2xl lg:rounded-3xl p-4 lg:p-8 shadow-md lg:shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1 z-10">
             <div className="flex justify-between items-start">
-              <div className="h-12 w-12 rounded-2xl bg-lightAccent text-primary flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors duration-300">
-                <Coins className="h-6 w-6" />
+              <div className="h-10 w-10 lg:h-12 lg:w-12 rounded-xl lg:rounded-2xl bg-lightAccent text-primary flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                <Coins className="h-5 w-5 lg:h-6 lg:w-6" />
               </div>
-              <span className="text-3xl font-extrabold text-primary/15 tracking-tight">04</span>
+              <span className="text-xl lg:text-3xl font-extrabold text-primary/15 tracking-tight">04</span>
             </div>
-            <div className="mt-6">
-              <h3 className="text-lg font-extrabold text-primary group-hover:text-accent transition-colors duration-200">
+            <div className="mt-4 lg:mt-6">
+              <h3 className="text-xs sm:text-sm lg:text-lg font-extrabold text-primary group-hover:text-accent transition-colors duration-200">
                 Biaya Terjangkau
               </h3>
-              <p className="mt-2.5 text-sm text-textLight/80 leading-relaxed">
+              <p className="hidden lg:block mt-2.5 text-sm text-textLight/80 leading-relaxed">
                 Komitmen menghadirkan fasilitas sekolah unggulan berstandar tinggi dengan skema pembiayaan yang bersahabat.
               </p>
             </div>
@@ -526,60 +523,73 @@ export default function Home() {
               </svg>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 relative z-10 items-start">
+            {/* Background Decorative Vertical Rope Line (Visible on mobile like a timeline clothesline) */}
+            <div className="absolute left-10 top-10 bottom-10 w-[2px] border-l-2 border-dashed border-accent/40 lg:hidden z-0 pointer-events-none"></div>
+
+            <div className="flex flex-col lg:grid lg:grid-cols-5 gap-6 relative z-10 items-start">
               {/* Card 1 */}
-              <div className="bg-white rounded-3xl p-6 shadow-md border border-gray-100 flex flex-col items-center text-center space-y-4 hover:shadow-xl transition-all duration-300 lg:-rotate-[8deg] lg:-translate-y-6 hover:scale-105 hover:lg:-translate-y-8 z-10">
-                <div className="h-14 w-14 rounded-full bg-lightAccent text-primary flex items-center justify-center shadow-inner border-2 border-accent/20 z-20 relative">
+              <div className="bg-white rounded-3xl p-4 lg:p-6 shadow-md border border-gray-100 flex flex-row lg:flex-col items-center lg:text-center gap-4 lg:space-y-4 hover:shadow-xl transition-all duration-300 lg:-rotate-[8deg] lg:-translate-y-6 hover:scale-105 hover:lg:-translate-y-8 z-10 w-full lg:w-auto">
+                <div className="h-12 w-12 lg:h-14 lg:w-14 rounded-full bg-lightAccent text-primary flex items-center justify-center shadow-inner border-2 border-accent/20 z-20 relative shrink-0">
                   <BookOpen className="h-6 w-6 text-accent" />
                 </div>
-                <h3 className="text-base font-extrabold text-primary">PAKEM</h3>
-                <p className="text-xs text-textLight/70 leading-relaxed font-light">
-                  Menyelenggarakan pembelajaran aktif, kreatif, efektif, dan menyenangkan berlandaskan kurikulum nasional.
-                </p>
+                <div className="flex flex-col space-y-1 lg:space-y-0">
+                  <h3 className="text-sm lg:text-base font-extrabold text-primary">PAKEM</h3>
+                  <p className="text-xs text-textLight/70 leading-relaxed font-light">
+                    Menyelenggarakan pembelajaran aktif, kreatif, efektif, dan menyenangkan berlandaskan kurikulum nasional.
+                  </p>
+                </div>
               </div>
 
               {/* Card 2 */}
-              <div className="bg-white rounded-3xl p-6 shadow-md border border-gray-100 flex flex-col items-center text-center space-y-4 hover:shadow-xl transition-all duration-300 lg:-rotate-[3deg] lg:translate-y-0 hover:scale-105 hover:lg:-translate-y-2 z-10">
-                <div className="h-14 w-14 rounded-full bg-lightAccent text-primary flex items-center justify-center shadow-inner border-2 border-accent/20 z-20 relative">
+              <div className="bg-white rounded-3xl p-4 lg:p-6 shadow-md border border-gray-100 flex flex-row lg:flex-col items-center lg:text-center gap-4 lg:space-y-4 hover:shadow-xl transition-all duration-300 lg:-rotate-[3deg] lg:translate-y-0 hover:scale-105 hover:lg:-translate-y-2 z-10 w-full lg:w-auto">
+                <div className="h-12 w-12 lg:h-14 lg:w-14 rounded-full bg-lightAccent text-primary flex items-center justify-center shadow-inner border-2 border-accent/20 z-20 relative shrink-0">
                   <Award className="h-6 w-6 text-accent" />
                 </div>
-                <h3 className="text-base font-extrabold text-primary">Akhlak Mulia</h3>
-                <p className="text-xs text-textLight/70 leading-relaxed font-light">
-                  Membiasakan karakter mulia melalui nilai ibadah harian dan keteladanan akhlak pendidik.
-                </p>
+                <div className="flex flex-col space-y-1 lg:space-y-0">
+                  <h3 className="text-sm lg:text-base font-extrabold text-primary">Akhlak Mulia</h3>
+                  <p className="text-xs text-textLight/70 leading-relaxed font-light">
+                    Membiasakan karakter mulia melalui nilai ibadah harian dan keteladanan akhlak pendidik.
+                  </p>
+                </div>
               </div>
 
               {/* Card 3 */}
-              <div className="bg-white rounded-3xl p-6 shadow-md border border-gray-100 flex flex-col items-center text-center space-y-4 hover:shadow-xl transition-all duration-300 lg:rotate-0 lg:translate-y-6 hover:scale-105 hover:lg:translate-y-4 z-10">
-                <div className="h-14 w-14 rounded-full bg-lightAccent text-primary flex items-center justify-center shadow-inner border-2 border-accent/20 z-20 relative">
+              <div className="bg-white rounded-3xl p-4 lg:p-6 shadow-md border border-gray-100 flex flex-row lg:flex-col items-center lg:text-center gap-4 lg:space-y-4 hover:shadow-xl transition-all duration-300 lg:rotate-0 lg:translate-y-6 hover:scale-105 hover:lg:translate-y-4 z-10 w-full lg:w-auto">
+                <div className="h-12 w-12 lg:h-14 lg:w-14 rounded-full bg-lightAccent text-primary flex items-center justify-center shadow-inner border-2 border-accent/20 z-20 relative shrink-0">
                   <Trophy className="h-6 w-6 text-accent" />
                 </div>
-                <h3 className="text-base font-extrabold text-primary">Minat & Bakat</h3>
-                <p className="text-xs text-textLight/70 leading-relaxed font-light">
-                  Mengembangkan minat kreatif, bakat olahraga, dan seni anak melalui program ekstrakurikuler terpadu.
-                </p>
+                <div className="flex flex-col space-y-1 lg:space-y-0">
+                  <h3 className="text-sm lg:text-base font-extrabold text-primary">Minat & Bakat</h3>
+                  <p className="text-xs text-textLight/70 leading-relaxed font-light">
+                    Mengembangkan minat kreatif, bakat olahraga, dan seni anak melalui program ekstrakurikuler terpadu.
+                  </p>
+                </div>
               </div>
 
               {/* Card 4 */}
-              <div className="bg-white rounded-3xl p-6 shadow-md border border-gray-100 flex flex-col items-center text-center space-y-4 hover:shadow-xl transition-all duration-300 lg:rotate-[3deg] lg:translate-y-0 hover:scale-105 hover:lg:-translate-y-2 z-10">
-                <div className="h-14 w-14 rounded-full bg-lightAccent text-primary flex items-center justify-center shadow-inner border-2 border-accent/20 z-20 relative">
+              <div className="bg-white rounded-3xl p-4 lg:p-6 shadow-md border border-gray-100 flex flex-row lg:flex-col items-center lg:text-center gap-4 lg:space-y-4 hover:shadow-xl transition-all duration-300 lg:rotate-[3deg] lg:translate-y-0 hover:scale-105 hover:lg:-translate-y-2 z-10 w-full lg:w-auto">
+                <div className="h-12 w-12 lg:h-14 lg:w-14 rounded-full bg-lightAccent text-primary flex items-center justify-center shadow-inner border-2 border-accent/20 z-20 relative shrink-0">
                   <School className="h-6 w-6 text-accent" />
                 </div>
-                <h3 className="text-base font-extrabold text-primary">Smart School</h3>
-                <p className="text-xs text-textLight/70 leading-relaxed font-light">
-                  Menerapkan teknologi ramah anak dalam media pembelajaran multimedia yang interaktif.
-                </p>
+                <div className="flex flex-col space-y-1 lg:space-y-0">
+                  <h3 className="text-sm lg:text-base font-extrabold text-primary">Smart School</h3>
+                  <p className="text-xs text-textLight/70 leading-relaxed font-light">
+                    Menerapkan teknologi ramah anak dalam media pembelajaran multimedia yang interaktif.
+                  </p>
+                </div>
               </div>
 
               {/* Card 5 */}
-              <div className="bg-white rounded-3xl p-6 shadow-md border border-gray-100 flex flex-col items-center text-center space-y-4 hover:shadow-xl transition-all duration-300 lg:rotate-[8deg] lg:-translate-y-6 hover:scale-105 hover:lg:-translate-y-8 z-10">
-                <div className="h-14 w-14 rounded-full bg-lightAccent text-primary flex items-center justify-center shadow-inner border-2 border-accent/20 z-20 relative">
+              <div className="bg-white rounded-3xl p-4 lg:p-6 shadow-md border border-gray-100 flex flex-row lg:flex-col items-center lg:text-center gap-4 lg:space-y-4 hover:shadow-xl transition-all duration-300 lg:rotate-[8deg] lg:-translate-y-6 hover:scale-105 hover:lg:-translate-y-8 z-10 w-full lg:w-auto">
+                <div className="h-12 w-12 lg:h-14 lg:w-14 rounded-full bg-lightAccent text-primary flex items-center justify-center shadow-inner border-2 border-accent/20 z-20 relative shrink-0">
                   <Users className="h-6 w-6 text-accent" />
                 </div>
-                <h3 className="text-base font-extrabold text-primary">Cinta Lingkungan</h3>
-                <p className="text-xs text-textLight/70 leading-relaxed font-light">
-                  Membudayakan perilaku hidup bersih, sehat, serta cinta lingkungan hidup di lingkungan sekolah dan rumah.
-                </p>
+                <div className="flex flex-col space-y-1 lg:space-y-0">
+                  <h3 className="text-sm lg:text-base font-extrabold text-primary">Cinta Lingkungan</h3>
+                  <p className="text-xs text-textLight/70 leading-relaxed font-light">
+                    Membudayakan perilaku hidup bersih, sehat, serta cinta lingkungan hidup di lingkungan sekolah dan rumah.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -676,42 +686,42 @@ export default function Home() {
           </div>
 
           {/* Cards Grid with Diagonal Cut layout */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-col md:grid md:grid-cols-3 gap-6 lg:gap-8">
             {/* Card 1: Fase A */}
-            <div className="filter drop-shadow-md hover:drop-shadow-xl transition-all duration-300 group hover:-translate-y-1">
+            <div className="filter drop-shadow-md hover:drop-shadow-xl transition-all duration-300 group hover:-translate-y-1 w-full">
               <div 
-                className="bg-white min-h-[440px] flex flex-col justify-between relative overflow-hidden rounded-[24px]"
+                className="bg-white flex flex-row md:flex-col min-h-[140px] md:min-h-[440px] justify-between relative overflow-hidden rounded-[24px]"
                 style={{ clipPath: 'polygon(3rem 0, 100% 0, 100% 100%, 0 100%, 0 3rem)' }}
               >
                 {/* Top Image */}
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div className="relative w-1/3 md:w-full aspect-[1/1] md:aspect-[16/10] overflow-hidden shrink-0">
                   <img
                     src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=600&auto=format&fit=crop"
                     alt="Fase A"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   {/* Category Tag overlay */}
-                  <span className="absolute top-4 right-4 bg-accent text-white text-[9px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-md z-10">
+                  <span className="absolute top-2 right-2 md:top-4 md:right-4 bg-accent text-white text-[8px] md:text-[9px] font-extrabold uppercase tracking-wider px-2 md:px-2.5 py-0.5 md:py-1 rounded-md shadow-md z-10">
                     Fase A
                   </span>
                   {/* Overlapping Icon Circle */}
-                  <div className="absolute left-6 bottom-0 translate-y-1/2 z-20 h-14 w-14 rounded-full bg-primary flex items-center justify-center border-4 border-white text-white shadow-md group-hover:bg-accent transition-colors duration-300">
+                  <div className="absolute left-6 bottom-0 translate-y-1/2 z-20 h-14 w-14 rounded-full bg-primary flex items-center justify-center border-4 border-white text-white shadow-md group-hover:bg-accent transition-colors duration-300 hidden md:flex">
                     <School className="h-6 w-6" />
                   </div>
                 </div>
 
                 {/* Content body */}
-                <div className="pt-10 px-6 pb-6 flex-grow flex flex-col justify-between">
-                  <div className="space-y-3">
-                    <h3 className="text-lg font-extrabold text-primary leading-snug group-hover:text-accent transition-colors">
+                <div className="p-4 md:pt-10 md:px-6 md:pb-6 flex-grow flex flex-col justify-between min-w-0">
+                  <div className="space-y-1 md:space-y-3">
+                    <h3 className="text-sm md:text-lg font-extrabold text-primary leading-snug group-hover:text-accent transition-colors line-clamp-2">
                       Fase A: Kelas I & II (Transisi Menyenangkan)
                     </h3>
-                    <p className="text-xs text-textLight/60 leading-relaxed font-light">
+                    <p className="text-[11px] md:text-xs text-textLight/60 leading-relaxed font-light line-clamp-2 md:line-clamp-none">
                       Fokus pada pengenalan dasar baca-tulis-hitung (Calistung) interaktif tanpa membebani mental belajar anak.
                     </p>
                   </div>
                   
-                  <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
+                  <div className="mt-4 md:mt-6 pt-2 md:pt-4 border-t border-gray-100 flex justify-between items-center">
                     <span className="text-xs font-bold text-primary group-hover:text-accent transition-colors flex items-center gap-1 cursor-pointer">
                       Learn More <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                     </span>
@@ -719,93 +729,93 @@ export default function Home() {
                 </div>
 
                 {/* Accent bottom hover border wrapper */}
-                <div className="h-[4px] w-full bg-transparent group-hover:bg-accent transition-colors absolute bottom-0 left-0 z-20"></div>
+                <div className="h-[4px] w-full bg-transparent group-hover:bg-accent transition-colors absolute bottom-0 left-0 z-20 hidden md:block"></div>
               </div>
             </div>
 
             {/* Card 2: Fase B */}
-            <div className="filter drop-shadow-md hover:drop-shadow-xl transition-all duration-300 group hover:-translate-y-1">
+            <div className="filter drop-shadow-md hover:drop-shadow-xl transition-all duration-300 group hover:-translate-y-1 w-full">
               <div 
-                className="bg-white min-h-[440px] flex flex-col justify-between relative overflow-hidden rounded-[24px]"
+                className="bg-white flex flex-row md:flex-col min-h-[140px] md:min-h-[440px] justify-between relative overflow-hidden rounded-[24px]"
                 style={{ clipPath: 'polygon(3rem 0, 100% 0, 100% 100%, 0 100%, 0 3rem)' }}
               >
                 {/* Top Image */}
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div className="relative w-1/3 md:w-full aspect-[1/1] md:aspect-[16/10] overflow-hidden shrink-0">
                   <img
                     src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=600&auto=format&fit=crop"
                     alt="Fase B"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <span className="absolute top-4 right-4 bg-primary text-white text-[9px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-md z-10">
+                  <span className="absolute top-2 right-2 md:top-4 md:right-4 bg-primary text-white text-[8px] md:text-[9px] font-extrabold uppercase tracking-wider px-2 md:px-2.5 py-0.5 md:py-1 rounded-md shadow-md z-10">
                     Fase B
                   </span>
-                  <div className="absolute left-6 bottom-0 translate-y-1/2 z-20 h-14 w-14 rounded-full bg-primary flex items-center justify-center border-4 border-white text-white shadow-md group-hover:bg-accent transition-colors duration-300">
+                  <div className="absolute left-6 bottom-0 translate-y-1/2 z-20 h-14 w-14 rounded-full bg-primary flex items-center justify-center border-4 border-white text-white shadow-md group-hover:bg-accent transition-colors duration-300 hidden md:flex">
                     <BookOpen className="h-6 w-6" />
                   </div>
                 </div>
 
                 {/* Content body */}
-                <div className="pt-10 px-6 pb-6 flex-grow flex flex-col justify-between">
-                  <div className="space-y-3">
-                    <h3 className="text-lg font-extrabold text-primary leading-snug group-hover:text-accent transition-colors">
+                <div className="p-4 md:pt-10 md:px-6 md:pb-6 flex-grow flex flex-col justify-between min-w-0">
+                  <div className="space-y-1 md:space-y-3">
+                    <h3 className="text-sm md:text-lg font-extrabold text-primary leading-snug group-hover:text-accent transition-colors line-clamp-2">
                       Fase B: Kelas III & IV (Pengembangan Nalar)
                     </h3>
-                    <p className="text-xs text-textLight/60 leading-relaxed font-light">
+                    <p className="text-[11px] md:text-xs text-textLight/60 leading-relaxed font-light line-clamp-2 md:line-clamp-none">
                       Mengembangkan nalar kritis anak dengan mulai memperkenalkan pengenalan IPAS dan kerja kelompok sederhana.
                     </p>
                   </div>
                   
-                  <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
+                  <div className="mt-4 md:mt-6 pt-2 md:pt-4 border-t border-gray-100 flex justify-between items-center">
                     <span className="text-xs font-bold text-primary group-hover:text-accent transition-colors flex items-center gap-1 cursor-pointer">
                       Learn More <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                     </span>
                   </div>
                 </div>
 
-                <div className="h-[4px] w-full bg-transparent group-hover:bg-accent transition-colors absolute bottom-0 left-0 z-20"></div>
+                <div className="h-[4px] w-full bg-transparent group-hover:bg-accent transition-colors absolute bottom-0 left-0 z-20 hidden md:block"></div>
               </div>
             </div>
 
             {/* Card 3: Fase C */}
-            <div className="filter drop-shadow-md hover:drop-shadow-xl transition-all duration-300 group hover:-translate-y-1">
+            <div className="filter drop-shadow-md hover:drop-shadow-xl transition-all duration-300 group hover:-translate-y-1 w-full">
               <div 
-                className="bg-white min-h-[440px] flex flex-col justify-between relative overflow-hidden rounded-[24px]"
+                className="bg-white flex flex-row md:flex-col min-h-[140px] md:min-h-[440px] justify-between relative overflow-hidden rounded-[24px]"
                 style={{ clipPath: 'polygon(3rem 0, 100% 0, 100% 100%, 0 100%, 0 3rem)' }}
               >
                 {/* Top Image */}
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div className="relative w-1/3 md:w-full aspect-[1/1] md:aspect-[16/10] overflow-hidden shrink-0">
                   <img
                     src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=600&auto=format&fit=crop"
                     alt="Fase C"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <span className="absolute top-4 right-4 bg-accent text-white text-[9px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-md z-10">
+                  <span className="absolute top-2 right-2 md:top-4 md:right-4 bg-accent text-white text-[8px] md:text-[9px] font-extrabold uppercase tracking-wider px-2 md:px-2.5 py-0.5 md:py-1 rounded-md shadow-md z-10">
                     Fase C
                   </span>
-                  <div className="absolute left-6 bottom-0 translate-y-1/2 z-20 h-14 w-14 rounded-full bg-primary flex items-center justify-center border-4 border-white text-white shadow-md group-hover:bg-accent transition-colors duration-300">
+                  <div className="absolute left-6 bottom-0 translate-y-1/2 z-20 h-14 w-14 rounded-full bg-primary flex items-center justify-center border-4 border-white text-white shadow-md group-hover:bg-accent transition-colors duration-300 hidden md:flex">
                     <Trophy className="h-6 w-6" />
                   </div>
                 </div>
 
                 {/* Content body */}
-                <div className="pt-10 px-6 pb-6 flex-grow flex flex-col justify-between">
-                  <div className="space-y-3">
-                    <h3 className="text-lg font-extrabold text-primary leading-snug group-hover:text-accent transition-colors">
+                <div className="p-4 md:pt-10 md:px-6 md:pb-6 flex-grow flex flex-col justify-between min-w-0">
+                  <div className="space-y-1 md:space-y-3">
+                    <h3 className="text-sm md:text-lg font-extrabold text-primary leading-snug group-hover:text-accent transition-colors line-clamp-2">
                       Fase C: Kelas V & VI (Pemantapan Mandiri)
                     </h3>
-                    <p className="text-xs text-textLight/60 leading-relaxed font-light">
+                    <p className="text-[11px] md:text-xs text-textLight/60 leading-relaxed font-light line-clamp-2 md:line-clamp-none">
                       Mempersiapkan siswa menghadapi ANBK komputer nasional secara matang serta pembiasaan kemandirian transisi SMP.
                     </p>
                   </div>
                   
-                  <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
+                  <div className="mt-4 md:mt-6 pt-2 md:pt-4 border-t border-gray-100 flex justify-between items-center">
                     <span className="text-xs font-bold text-primary group-hover:text-accent transition-colors flex items-center gap-1 cursor-pointer">
                       Learn More <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                     </span>
                   </div>
                 </div>
 
-                <div className="h-[4px] w-full bg-transparent group-hover:bg-accent transition-colors absolute bottom-0 left-0 z-20"></div>
+                <div className="h-[4px] w-full bg-transparent group-hover:bg-accent transition-colors absolute bottom-0 left-0 z-20 hidden md:block"></div>
               </div>
             </div>
           </div>
@@ -881,9 +891,9 @@ export default function Home() {
           </div>
 
           {/* Teachers Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
             {timKepemimpinan.slice(0, 4).map((teacher, index) => (
-              <div key={index} className="group bg-gray-50 rounded-3xl overflow-hidden border border-gray-100/50 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
+              <div key={index} className="group bg-gray-50 rounded-[20px] lg:rounded-3xl overflow-hidden border border-gray-100/50 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
                 <div className="relative aspect-[3/4] overflow-hidden bg-gray-200">
                   <img
                     src={teacher.image}
@@ -897,11 +907,11 @@ export default function Home() {
                     </span>
                   </div>
                 </div>
-                <div className="p-5 text-center flex-grow flex flex-col justify-center bg-white border-t border-gray-50">
-                  <h3 className="font-extrabold text-primary group-hover:text-accent transition-colors duration-200 text-base">
+                <div className="p-3 lg:p-5 text-center flex-grow flex flex-col justify-center bg-white border-t border-gray-50">
+                  <h3 className="font-extrabold text-primary group-hover:text-accent transition-colors duration-200 text-xs sm:text-base">
                     {teacher.name}
                   </h3>
-                  <p className="text-[11px] text-textLight/50 uppercase tracking-wider font-bold mt-1">
+                  <p className="text-[9px] sm:text-[11px] text-textLight/50 uppercase tracking-wider font-bold mt-1">
                     {teacher.role}
                   </p>
                 </div>
@@ -1227,37 +1237,37 @@ export default function Home() {
           </div>
 
           {/* News Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-col md:grid md:grid-cols-3 gap-6 lg:gap-8">
             {mockNews.slice(0, 3).map((news) => (
-              <article key={news.id} className="group bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+              <article key={news.id} className="group bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-row md:flex-col h-auto md:h-full w-full">
                 {/* Image & Category Tag */}
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div className="relative w-1/3 md:w-full aspect-[1/1] md:aspect-[16/10] overflow-hidden shrink-0">
                   <img
                     src={news.image}
                     alt={news.title}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 left-4 bg-accent text-white text-[9px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-md shadow-md">
+                  <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-accent text-white text-[8px] md:text-[9px] font-extrabold uppercase tracking-wider px-2 md:px-3 py-0.5 md:py-1 rounded-md shadow-md z-10">
                     {news.category}
                   </div>
                 </div>
 
                 {/* Card Body */}
-                <div className="p-6 flex-grow flex flex-col justify-between">
-                  <div className="space-y-3">
-                    <div className="flex items-center text-[10px] text-textLight/40 font-bold uppercase tracking-wider gap-1.5">
+                <div className="p-4 md:p-6 flex-grow flex flex-col justify-between min-w-0">
+                  <div className="space-y-1.5 md:space-y-3">
+                    <div className="flex items-center text-[9px] md:text-[10px] text-textLight/40 font-bold uppercase tracking-wider gap-1.5">
                       <Calendar className="h-3.5 w-3.5 text-accent" />
                       <span>{news.date}</span>
                     </div>
-                    <h3 className="text-base font-extrabold text-primary leading-snug group-hover:text-accent transition-colors line-clamp-2">
+                    <h3 className="text-sm md:text-base font-extrabold text-primary leading-snug group-hover:text-accent transition-colors line-clamp-2">
                       <Link href={`/berita/${news.slug}`}>{news.title}</Link>
                     </h3>
-                    <p className="text-xs text-textLight/60 font-light leading-relaxed line-clamp-3">
+                    <p className="text-[11px] md:text-xs text-textLight/60 font-light leading-relaxed line-clamp-2 md:line-clamp-3">
                       {news.excerpt}
                     </p>
                   </div>
                   
-                  <div className="mt-6 pt-4 border-t border-gray-100">
+                  <div className="mt-4 md:mt-6 pt-2 md:pt-4 border-t border-gray-100">
                     <Link
                       href={`/berita/${news.slug}`}
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-primary group-hover:text-accent transition-colors"

@@ -222,7 +222,7 @@ export default function PpdbClient() {
     <div className="w-full flex flex-col">
       
       {/* 1. HERO SECTION & COUNTDOWN */}
-      <section className="relative bg-gradient-to-r from-primary via-primary-dark to-secondary text-white py-16 sm:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-r from-primary via-primary-dark to-secondary text-white py-20 sm:py-28 overflow-hidden rounded-b-[40px] md:rounded-b-[80px] shadow-lg shadow-primary/10">
         {/* Abstract patterns */}
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#d8f3dc_1px,transparent_1px)] [background-size:16px_16px]"></div>
         
