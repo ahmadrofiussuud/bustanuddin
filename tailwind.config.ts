@@ -10,27 +10,27 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#1a4731",
-          dark: "#123323",
-          light: "#225c40",
+          DEFAULT: "#0e4a40",
+          dark: "#072a24",
+          light: "#145c50",
         },
         secondary: {
-          DEFAULT: "#2d6a4f",
-          dark: "#1b4332",
-          light: "#40916c",
+          DEFAULT: "#145c50",
+          dark: "#0b3b33",
+          light: "#1d7667",
         },
         accent: {
-          DEFAULT: "#52b788",
-          dark: "#2d6a4f",
-          light: "#74c69d",
+          DEFAULT: "#ff9100",
+          dark: "#d97b00",
+          light: "#ffa733",
         },
         lightAccent: {
-          DEFAULT: "#d8f3dc",
-          hover: "#b7e4c7",
+          DEFAULT: "#e6f2f0",
+          hover: "#cde6e2",
         },
         textDark: "#ffffff",
         textLight: "#1b1b1b",
-        bgLight: "#f8fdf9",
+        bgLight: "#f8faf9",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],

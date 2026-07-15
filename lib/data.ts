@@ -57,7 +57,7 @@ export const mockNews = [
     category: "Kegiatan",
     date: "28 Mei 2026",
     excerpt: "Acara kelulusan dan pelepasan siswa kelas VI angkatan 30 berlangsung dengan penuh keceriaan dan haru dihadiri oleh seluruh wali murid serta komite...",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1525921429624-479b6a26d84d?q=80&w=800&auto=format&fit=crop",
     slug: "wisuda-angkatan-xxx-sd"
   },
   {
@@ -392,7 +392,7 @@ export const beritaPageList = [
     category: "Berita",
     date: "28 Mei 2026",
     excerpt: "Acara kelulusan dan pelepasan siswa kelas VI angkatan 30 berlangsung dengan penuh keceriaan dan haru dihadiri oleh seluruh wali murid serta komite...",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1525921429624-479b6a26d84d?q=80&w=800&auto=format&fit=crop",
     slug: "wisuda-angkatan-xxx-sd"
   },
   {
@@ -465,7 +465,7 @@ export const galeriItems = [
   { id: 6, title: "Latihan Bermain Angklung Sekolah", category: "Seni", image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=800&auto=format&fit=crop" },
   { id: 7, title: "Sosialisasi Open House POMG", category: "PPDB", image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop" },
   { id: 8, title: "Pengamatan Kesiapan Belajar Anak", category: "PPDB", image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop" },
-  { id: 9, title: "Upacara Pelepasan Siswa Kelas VI", category: "Wisuda", image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop" },
+  { id: 9, title: "Upacara Pelepasan Siswa Kelas VI", category: "Wisuda", image: "https://images.unsplash.com/photo-1525921429624-479b6a26d84d?q=80&w=800&auto=format&fit=crop" },
   { id: 10, title: "Foto Bersama Pelepasan Balon Kelas VI", category: "Wisuda", image: "https://images.unsplash.com/photo-1525921429624-479b6a26d84d?q=80&w=800&auto=format&fit=crop" },
   { id: 11, title: "Membaca Buku Cerita Bergambar", category: "Akademik", image: "https://images.unsplash.com/photo-1581091870622-0402e88a0e8c?q=80&w=800&auto=format&fit=crop" },
   { id: 12, title: "Latihan Menari Tradisional Anak", category: "Seni", image: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=800&auto=format&fit=crop" }
