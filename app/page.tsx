@@ -52,7 +52,7 @@ export default function Home() {
       bg: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=1600&auto=format&fit=crop"
     },
     {
-      badge: "PENDIDIKAN BERKARAKTER LUHUR",
+      badge: "",
       title: "Membentuk Karakter & Akhlak Mulia",
       text: "Fokus kami tidak hanya pada keunggulan akademik, tetapi juga penanaman nilai budi pekerti dan pembiasaan ibadah harian.",
       bg: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1600&auto=format&fit=crop"
@@ -179,14 +179,16 @@ export default function Home() {
           {mounted ? (
             <>
               {/* Badge */}
-              <motion.div
-                key={`badge-${currentHeroSlide}`}
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="inline-flex items-center gap-2 rounded-full bg-accent/20 border border-accent/40 px-4 py-1.5 text-xs sm:text-sm font-bold text-accent mb-6"
-              >
-                <Award className="h-4 w-4" /> {heroSlides[currentHeroSlide].badge}
-              </motion.div>
+              {heroSlides[currentHeroSlide].badge && (
+                <motion.div
+                  key={`badge-${currentHeroSlide}`}
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="inline-flex items-center gap-2 rounded-full bg-accent/20 border border-accent/40 px-4 py-1.5 text-xs sm:text-sm font-bold text-accent mb-6"
+                >
+                  <Award className="h-4 w-4" /> {heroSlides[currentHeroSlide].badge}
+                </motion.div>
+              )}
 
               {/* Heading */}
               <motion.h1
@@ -217,9 +219,11 @@ export default function Home() {
             </>
           ) : (
             <>
-              <div className="inline-flex items-center gap-2 rounded-full bg-accent/20 border border-accent/40 px-4 py-1.5 text-xs sm:text-sm font-bold text-accent mb-6">
-                <Award className="h-4 w-4" /> {heroSlides[0].badge}
-              </div>
+              {heroSlides[0].badge && (
+                <div className="inline-flex items-center gap-2 rounded-full bg-accent/20 border border-accent/40 px-4 py-1.5 text-xs sm:text-sm font-bold text-accent mb-6">
+                  <Award className="h-4 w-4" /> {heroSlides[0].badge}
+                </div>
+              )}
               <h1 className="max-w-4xl text-3xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-balance leading-tight">
                 {heroSlides[0].title}
               </h1>
@@ -399,11 +403,8 @@ export default function Home() {
 
             {/* Right Side: Text & Info (Matching template layout) */}
             <div className="space-y-6 lg:pl-4">
-              <div className="flex items-center gap-2">
-                <div className="h-[2px] w-6 bg-accent rounded-full"></div>
-                <span className="text-xs font-bold text-accent uppercase tracking-widest flex items-center gap-1">
-                  <BookOpen className="h-3.5 w-3.5" /> Tentang Kami
-                </span>
+              <div className="inline-flex items-center gap-2 rounded-full bg-accent/10 px-4 py-1.5 text-xs font-bold text-accent uppercase tracking-widest">
+                <BookOpen className="h-3.5 w-3.5" /> Tentang Kami
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-primary tracking-tight leading-tight">
                 Our Edukation System <span className="text-accent">Inspires</span> You More.
@@ -704,14 +705,14 @@ export default function Home() {
                   <span className="absolute top-2 right-2 md:top-4 md:right-4 bg-accent text-white text-[8px] md:text-[9px] font-extrabold uppercase tracking-wider px-2 md:px-2.5 py-0.5 md:py-1 rounded-md shadow-md z-10">
                     Fase A
                   </span>
-                  {/* Overlapping Icon Circle */}
-                  <div className="absolute left-6 bottom-0 translate-y-1/2 z-20 h-14 w-14 rounded-full bg-primary flex items-center justify-center border-4 border-white text-white shadow-md group-hover:bg-accent transition-colors duration-300 hidden md:flex">
-                    <School className="h-6 w-6" />
-                  </div>
                 </div>
 
                 {/* Content body */}
-                <div className="p-4 md:pt-10 md:px-6 md:pb-6 flex-grow flex flex-col justify-between min-w-0">
+                <div className="p-4 md:pt-10 md:px-6 md:pb-6 flex-grow flex flex-col justify-between min-w-0 relative">
+                  {/* Overlapping Icon Circle - Moved here to prevent clipping by overflow-hidden image container */}
+                  <div className="absolute left-6 top-0 -translate-y-1/2 z-20 h-14 w-14 rounded-full bg-primary flex items-center justify-center border-4 border-white text-white shadow-md group-hover:bg-accent transition-colors duration-300 hidden md:flex">
+                    <School className="h-6 w-6" />
+                  </div>
                   <div className="space-y-1 md:space-y-3">
                     <h3 className="text-sm md:text-lg font-extrabold text-primary leading-snug group-hover:text-accent transition-colors line-clamp-2">
                       Fase A: Kelas I & II (Transisi Menyenangkan)
@@ -749,13 +750,14 @@ export default function Home() {
                   <span className="absolute top-2 right-2 md:top-4 md:right-4 bg-primary text-white text-[8px] md:text-[9px] font-extrabold uppercase tracking-wider px-2 md:px-2.5 py-0.5 md:py-1 rounded-md shadow-md z-10">
                     Fase B
                   </span>
-                  <div className="absolute left-6 bottom-0 translate-y-1/2 z-20 h-14 w-14 rounded-full bg-primary flex items-center justify-center border-4 border-white text-white shadow-md group-hover:bg-accent transition-colors duration-300 hidden md:flex">
-                    <BookOpen className="h-6 w-6" />
-                  </div>
                 </div>
 
                 {/* Content body */}
-                <div className="p-4 md:pt-10 md:px-6 md:pb-6 flex-grow flex flex-col justify-between min-w-0">
+                <div className="p-4 md:pt-10 md:px-6 md:pb-6 flex-grow flex flex-col justify-between min-w-0 relative">
+                  {/* Overlapping Icon Circle - Moved here to prevent clipping by overflow-hidden image container */}
+                  <div className="absolute left-6 top-0 -translate-y-1/2 z-20 h-14 w-14 rounded-full bg-primary flex items-center justify-center border-4 border-white text-white shadow-md group-hover:bg-accent transition-colors duration-300 hidden md:flex">
+                    <BookOpen className="h-6 w-6" />
+                  </div>
                   <div className="space-y-1 md:space-y-3">
                     <h3 className="text-sm md:text-lg font-extrabold text-primary leading-snug group-hover:text-accent transition-colors line-clamp-2">
                       Fase B: Kelas III & IV (Pengembangan Nalar)
@@ -792,13 +794,14 @@ export default function Home() {
                   <span className="absolute top-2 right-2 md:top-4 md:right-4 bg-accent text-white text-[8px] md:text-[9px] font-extrabold uppercase tracking-wider px-2 md:px-2.5 py-0.5 md:py-1 rounded-md shadow-md z-10">
                     Fase C
                   </span>
-                  <div className="absolute left-6 bottom-0 translate-y-1/2 z-20 h-14 w-14 rounded-full bg-primary flex items-center justify-center border-4 border-white text-white shadow-md group-hover:bg-accent transition-colors duration-300 hidden md:flex">
-                    <Trophy className="h-6 w-6" />
-                  </div>
                 </div>
 
                 {/* Content body */}
-                <div className="p-4 md:pt-10 md:px-6 md:pb-6 flex-grow flex flex-col justify-between min-w-0">
+                <div className="p-4 md:pt-10 md:px-6 md:pb-6 flex-grow flex flex-col justify-between min-w-0 relative">
+                  {/* Overlapping Icon Circle - Moved here to prevent clipping by overflow-hidden image container */}
+                  <div className="absolute left-6 top-0 -translate-y-1/2 z-20 h-14 w-14 rounded-full bg-primary flex items-center justify-center border-4 border-white text-white shadow-md group-hover:bg-accent transition-colors duration-300 hidden md:flex">
+                    <Trophy className="h-6 w-6" />
+                  </div>
                   <div className="space-y-1 md:space-y-3">
                     <h3 className="text-sm md:text-lg font-extrabold text-primary leading-snug group-hover:text-accent transition-colors line-clamp-2">
                       Fase C: Kelas V & VI (Pemantapan Mandiri)

@@ -147,40 +147,51 @@ export default function GaleriClient() {
             ))}
           </div>
 
-          {/* 3. MASONRY PHOTO GRID (CSS Columns) */}
+          {/* 3. POLAROID PHOTO GRID (Consistent & Playful) */}
           {displayedList.length === 0 ? (
             <div className="bg-white p-12 rounded-3xl border border-gray-100 shadow-sm text-center max-w-md mx-auto">
               <p className="text-textLight/50 text-sm font-medium">Belum ada dokumentasi foto.</p>
             </div>
           ) : (
-            <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6 [column-fill:_auto]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-6">
               {displayedList.map((item, idx) => {
                 // Find global index in filtered list for lightbox tracking
                 const globalIdx = filteredList.findIndex((f) => f.id === item.id);
+                // Dynamic slight rotation/tilt for each card to look organic and playful (alternating tilts)
+                const rotations = ["hover:rotate-1 rotate-[-1deg]", "hover:-rotate-1 rotate-[1.2deg]", "hover:rotate-1 rotate-[-0.6deg]", "hover:-rotate-1 rotate-[0.8deg]"];
+                const cardRotation = rotations[idx % rotations.length];
+
                 return (
                   <Reveal key={item.id} delay={idx * 0.05} direction="up">
                     <div
                       onClick={() => setLightboxIndex(globalIdx)}
-                      className="break-inside-avoid relative group rounded-2xl overflow-hidden border border-gray-150 shadow-sm bg-white cursor-pointer hover:shadow-lg transition-shadow dark:bg-zinc-900 dark:border-zinc-800"
+                      className={`relative bg-white p-4 pb-6 rounded-xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer flex flex-col group dark:bg-zinc-900 dark:border-zinc-800 ${cardRotation}`}
                     >
-                      {/* Photo */}
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        width={600}
-                        height={500}
-                        className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                      
-                      {/* Interactive Hover Overlay details */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/90 via-primary-dark/45 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white z-10">
-                        <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-accent/90 text-white mb-3 shadow-inner transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                          <Maximize2 className="h-4 w-4" />
+                      {/* Playful Transparent Tape Graphic at the top */}
+                      <div className="absolute top-[-12px] left-1/2 -translate-x-1/2 w-14 h-5 bg-white/40 backdrop-blur-[1.5px] rotate-[-4deg] shadow-sm border-x border-dashed border-gray-300/40 z-20 pointer-events-none dark:bg-zinc-850/30" />
+
+                      {/* Photo container with fixed aspect ratio */}
+                      <div className="relative aspect-[4/3] w-full overflow-hidden rounded bg-gray-100 border border-gray-100 dark:border-zinc-800 shrink-0">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        {/* Soft overlay gradient on hover */}
+                        <div className="absolute inset-0 bg-primary-dark/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
+                          <div className="h-10 w-10 rounded-full bg-accent/90 text-white flex items-center justify-center shadow-lg transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                            <Maximize2 className="h-5 w-5" />
+                          </div>
                         </div>
-                        <h4 className="text-sm sm:text-base font-bold leading-tight transform translate-y-3 group-hover:translate-y-0 transition-transform duration-300 delay-[50ms]">
+                      </div>
+
+                      {/* Polaroid-style Caption */}
+                      <div className="mt-4 text-center px-1">
+                        <h4 className="font-extrabold text-sm sm:text-base text-primary dark:text-white leading-snug line-clamp-1 transition-colors group-hover:text-accent">
                           {item.title}
                         </h4>
-                        <span className="text-[10px] uppercase font-bold text-accent tracking-widest mt-1 block transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 delay-[100ms]">
+                        <span className="text-[10px] uppercase font-bold text-accent tracking-widest mt-1.5 block">
                           {item.category}
                         </span>
                       </div>

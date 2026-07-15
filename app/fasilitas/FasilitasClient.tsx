@@ -59,38 +59,38 @@ export default function FasilitasClient() {
   return (
     <div className="w-full flex flex-col">
       
-      {/* 1. PAGE HERO */}
-      <section className="relative bg-gradient-to-r from-primary via-primary-dark to-secondary text-white py-20 sm:py-28 overflow-hidden rounded-b-[40px] md:rounded-b-[80px] shadow-lg shadow-primary/10">
+      {/* 1. PAGE HERO & INTEGRATED STATS */}
+      <section className="relative bg-gradient-to-r from-primary via-primary-dark to-secondary text-white pt-20 pb-16 sm:pt-28 sm:pb-20 overflow-hidden rounded-b-[40px] md:rounded-b-[80px] shadow-lg shadow-primary/10">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#d8f3dc_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center sm:text-left">
-          <Reveal direction="down">
-            <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">Fasilitas</h1>
-          </Reveal>
-          
-          {/* Breadcrumbs */}
-          <Reveal direction="up" delay={0.1}>
-            <div className="mt-4 flex items-center justify-center sm:justify-start gap-2 text-xs sm:text-sm text-white/70">
-              <a href="/" className="hover:text-accent transition-colors">Beranda</a>
-              <ChevronRight className="h-3 w-3" />
-              <span className="text-white font-medium">Fasilitas</span>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center sm:text-left">
+            <Reveal direction="down">
+              <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">Fasilitas</h1>
+            </Reveal>
+            
+            {/* Breadcrumbs */}
+            <Reveal direction="up" delay={0.1}>
+              <div className="mt-4 flex items-center justify-center sm:justify-start gap-2 text-xs sm:text-sm text-white/70">
+                <a href="/" className="hover:text-accent transition-colors">Beranda</a>
+                <ChevronRight className="h-3 w-3" />
+                <span className="text-white font-medium">Fasilitas</span>
+              </div>
+            </Reveal>
+          </div>
 
-      {/* 2. STATS ROW */}
-      <section className="bg-primary text-white py-10 shadow-md">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {customStats.map((stat, idx) => (
-              <Reveal key={idx} delay={idx * 0.05} direction="up">
-                <div className="text-center p-3">
-                  <div className="text-3xl sm:text-4xl font-black text-accent">{stat.value}</div>
-                  <div className="text-sm font-semibold text-white/90 mt-1">{stat.label}</div>
-                  <div className="text-xs text-white/50 mt-0.5">{stat.detail}</div>
-                </div>
-              </Reveal>
-            ))}
+          {/* Integrated Stats Row */}
+          <div className="mt-12 pt-10 border-t border-white/10">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+              {customStats.map((stat, idx) => (
+                <Reveal key={idx} delay={idx * 0.05} direction="up">
+                  <div className="text-center p-4 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
+                    <div className="text-3xl sm:text-4xl font-black text-accent">{stat.value}</div>
+                    <div className="text-sm font-semibold text-white/90 mt-1">{stat.label}</div>
+                    <div className="text-xs text-white/60 mt-0.5">{stat.detail}</div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -129,7 +129,7 @@ export default function FasilitasClient() {
                       src={facility.image}
                       alt={facility.name}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-108"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     {/* Visual subtle overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-60" />
@@ -153,7 +153,7 @@ export default function FasilitasClient() {
       </section>
 
       {/* 4. 360 VIRTUAL TOUR PLACEHOLDER */}
-      <section className="py-20 bg-white dark:bg-zinc-950 border-t border-gray-150">
+      <section className="py-20 bg-white dark:bg-zinc-950 border-t border-gray-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           
           {/* Visual virtual tour box card */}

@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
-import { Award, Clock, CheckCircle2, ChevronRight, GraduationCap, Heart, Shield } from "lucide-react";
-import { motion, useInView } from "framer-motion";
+import { Award, Clock, CheckCircle2, ChevronRight, GraduationCap, Heart, Shield, School, BookOpen, Smile, Laptop, Trophy } from "lucide-react";
+import { motion, useInView, AnimatePresence } from "framer-motion";
 import { schoolInfo, sejarahTimeline, visiMisi, nilaiNilai, timKepemimpinan } from "@/lib/data";
 
 // Reuse Scroll Reveal wrapper
@@ -47,6 +47,53 @@ function Reveal({ children, delay = 0, direction = "up", duration = 0.6, classNa
 }
 
 export default function AboutClient() {
+  const [activeHistoryIdx, setActiveHistoryIdx] = useState(0);
+
+  const milestoneDetails = [
+    {
+      year: "2006",
+      title: "Pendirian Sekolah Dasar",
+      description: "Diresmikan oleh Yayasan Pendidikan Bustanuddin dengan program PAUD dan kelas I-III di awal pendirian.",
+      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop",
+      iconName: "school"
+    },
+    {
+      year: "2008",
+      title: "Akreditasi B Pertama",
+      description: "Meraih predikat Akreditasi B (Baik) dari BAN-S/M setelah audit kelayakan sarana bermain ramah anak dan kurikulum dasar.",
+      image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=800&auto=format&fit=crop",
+      iconName: "award"
+    },
+    {
+      year: "2010",
+      title: "Perpustakaan Ramah Anak",
+      description: "Pembangunan gedung perpustakaan khusus anak-anak yang dilengkapi buku bergambar, ensiklopedia, dan area audio-visual.",
+      image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=800&auto=format&fit=crop",
+      iconName: "book"
+    },
+    {
+      year: "2015",
+      title: "Sekolah Ramah Anak Model",
+      description: "Ditunjuk oleh Kementerian Pendidikan sebagai sekolah dasar percontohan ramah anak dan anti-perundungan tingkat regional.",
+      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop",
+      iconName: "smile"
+    },
+    {
+      year: "2020",
+      title: "Implementasi Smart School",
+      description: "Peluncuran sistem monitoring terintegrasi untuk orang tua: e-learning tematik, aplikasi rapor digital, dan presensi gerbang sekolah.",
+      image: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=800&auto=format&fit=crop",
+      iconName: "laptop"
+    },
+    {
+      year: "2026",
+      title: "Wisuda Angkatan XXX & Adiwiyata",
+      description: "Merayakan kelulusan angkatan ke-30 tingkat sekolah dasar dan meraih predikat Sekolah Adiwiyata atas kepedulian lingkungan hidup sejak dini.",
+      image: "https://images.unsplash.com/photo-1518152006812-edab29b069ac?q=80&w=800&auto=format&fit=crop",
+      iconName: "trophy"
+    }
+  ];
+
   return (
     <div className="w-full flex flex-col">
       
@@ -70,7 +117,7 @@ export default function AboutClient() {
         </div>
       </section>
 
-      {/* 2. SEJARAH TIMELINE */}
+      {/* 2. SEJARAH INTERAKTIF */}
       <section className="py-20 bg-bgLight">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
@@ -92,39 +139,92 @@ export default function AboutClient() {
             </Reveal>
           </div>
 
-          {/* Timeline Structure (Vertical) */}
-          <div className="relative border-l-2 border-accent/25 md:border-l-0 md:before:content-[''] md:before:absolute md:before:left-1/2 md:before:top-0 md:before:bottom-0 md:before:w-0.5 md:before:bg-accent/25 max-w-5xl mx-auto pl-6 md:pl-0 space-y-12 sm:space-y-16">
-            {sejarahTimeline.map((item, idx) => {
-              const isEven = idx % 2 === 0;
-              return (
-                <div key={idx} className="relative flex flex-col md:flex-row md:justify-between items-start md:items-center w-full">
-                  {/* Circle Node (Desktop absolute centered, Mobile left absolute) */}
-                  <div className="absolute left-[-32px] md:left-1/2 md:-translate-x-1/2 top-1.5 md:top-1/2 md:-translate-y-1/2 z-10 flex h-6 w-6 items-center justify-center rounded-full bg-accent text-white shadow-md font-bold text-xs">
-                    {idx + 1}
-                  </div>
+          {/* Interactive Year Selector Tabs */}
+          <div className="flex justify-start md:justify-center items-center gap-2 overflow-x-auto pb-4 scrollbar-none max-w-4xl mx-auto border-b border-gray-200 dark:border-zinc-800">
+            {milestoneDetails.map((milestone, idx) => (
+              <button
+                key={idx}
+                onClick={() => setActiveHistoryIdx(idx)}
+                className={`relative px-6 py-3 font-extrabold text-sm md:text-base rounded-full transition-all shrink-0 ${
+                  activeHistoryIdx === idx
+                    ? "bg-primary text-white shadow-md dark:bg-zinc-800"
+                    : "text-textLight/60 hover:text-primary dark:text-zinc-400 dark:hover:text-white hover:bg-gray-100"
+                }`}
+              >
+                Tahun {milestone.year}
+                {activeHistoryIdx === idx && (
+                  <span className="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-3 h-3 bg-primary rotate-45 dark:bg-zinc-800 hidden md:block" />
+                )}
+              </button>
+            ))}
+          </div>
 
-                  {/* Left / Right Card Layout */}
-                  <div className={`w-full md:w-[45%] ${isEven ? "md:order-1" : "md:order-2"}`}>
-                    <Reveal direction={isEven ? "right" : "left"} delay={0.1}>
-                      <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm dark:bg-zinc-900 dark:border-zinc-800 hover:shadow-md transition-shadow">
-                        <span className="inline-block bg-lightAccent text-primary px-3 py-1 rounded-md text-sm font-bold mb-3">
-                          Tahun {item.year}
-                        </span>
-                        <h4 className="text-lg font-bold text-primary dark:text-white">
-                          {item.title}
-                        </h4>
-                        <p className="mt-2 text-sm text-textLight/70 leading-relaxed dark:text-zinc-400">
-                          {item.description}
-                        </p>
-                      </div>
-                    </Reveal>
+          {/* Milestone Details Card */}
+          <div className="mt-12 bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-md dark:bg-zinc-900 dark:border-zinc-800 max-w-4xl mx-auto">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeHistoryIdx}
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -15 }}
+                transition={{ duration: 0.25 }}
+                className="grid grid-cols-1 md:grid-cols-2"
+              >
+                {/* Left: Image */}
+                <div className="relative aspect-[16/10] md:aspect-auto md:min-h-[340px] overflow-hidden bg-gray-150">
+                  <Image
+                    src={milestoneDetails[activeHistoryIdx].image}
+                    alt={milestoneDetails[activeHistoryIdx].title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                  <div className="absolute top-4 left-4 bg-accent text-white px-3.5 py-1 rounded-full text-[10px] uppercase font-bold shadow-md tracking-wider">
+                    Pencapaian {activeHistoryIdx + 1}
                   </div>
-
-                  {/* Empty Spacer Column for Desktop balance */}
-                  <div className="hidden md:block md:w-[45%] md:order-2"></div>
                 </div>
-              );
-            })}
+
+                {/* Right: Info */}
+                <div className="p-8 sm:p-10 flex flex-col justify-between relative min-h-[300px]">
+                  {/* Huge background year */}
+                  <div className="absolute right-6 top-4 text-7xl sm:text-8xl font-black text-primary/5 select-none pointer-events-none dark:text-white/5">
+                    {milestoneDetails[activeHistoryIdx].year}
+                  </div>
+
+                  <div className="space-y-4">
+                    {/* Icon Header */}
+                    <div className="flex items-center gap-3">
+                      <div className="h-10 w-10 rounded-full bg-lightAccent text-primary flex items-center justify-center shadow-inner">
+                        {milestoneDetails[activeHistoryIdx].iconName === "school" && <School className="h-5 w-5 text-accent" />}
+                        {milestoneDetails[activeHistoryIdx].iconName === "award" && <Award className="h-5 w-5 text-accent" />}
+                        {milestoneDetails[activeHistoryIdx].iconName === "book" && <BookOpen className="h-5 w-5 text-accent" />}
+                        {milestoneDetails[activeHistoryIdx].iconName === "smile" && <Smile className="h-5 w-5 text-accent" />}
+                        {milestoneDetails[activeHistoryIdx].iconName === "laptop" && <Laptop className="h-5 w-5 text-accent" />}
+                        {milestoneDetails[activeHistoryIdx].iconName === "trophy" && <Trophy className="h-5 w-5 text-accent" />}
+                      </div>
+                      <span className="text-xs uppercase font-extrabold text-accent tracking-widest leading-none">
+                        Tonggak Sejarah
+                      </span>
+                    </div>
+
+                    <h4 className="text-xl sm:text-2xl font-black text-primary dark:text-white leading-tight">
+                      {milestoneDetails[activeHistoryIdx].title}
+                    </h4>
+                    <p className="text-sm text-textLight/70 leading-relaxed dark:text-zinc-400">
+                      {milestoneDetails[activeHistoryIdx].description}
+                    </p>
+                  </div>
+
+                  {/* Progress Indicator */}
+                  <div className="mt-8 pt-6 border-t border-gray-100 dark:border-zinc-800 flex justify-between items-center text-[10px] text-textLight/40 dark:text-zinc-500 tracking-wider">
+                    <span>SD BUSTANUDDIN SINCE 2006</span>
+                    <span className="font-bold text-accent">
+                      {activeHistoryIdx + 1} / {milestoneDetails.length}
+                    </span>
+                  </div>
+                </div>
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
       </section>
@@ -322,7 +422,7 @@ export default function AboutClient() {
           </div>
 
           {/* Leaders Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 lg:gap-6">
             {timKepemimpinan.map((leader, idx) => (
               <Reveal key={idx} delay={idx * 0.05} direction="up">
                 <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col h-full hover:shadow-md transition-shadow dark:bg-zinc-900 dark:border-zinc-800">
@@ -334,16 +434,16 @@ export default function AboutClient() {
                       className="object-cover transition-transform duration-300 hover:scale-105"
                     />
                   </div>
-                  <div className="p-4 flex-grow flex flex-col justify-between">
+                  <div className="p-3 sm:p-4 flex-grow flex flex-col justify-between">
                     <div>
-                      <h4 className="text-sm font-extrabold text-primary dark:text-white leading-snug">
+                      <h4 className="text-xs sm:text-sm font-extrabold text-primary dark:text-white leading-snug">
                         {leader.name}
                       </h4>
-                      <p className="text-[10px] uppercase font-bold text-accent mt-1 leading-none">
+                      <p className="text-[9px] sm:text-[10px] uppercase font-bold text-accent mt-1 leading-none">
                         {leader.role}
                       </p>
                     </div>
-                    <p className="text-[11px] text-textLight/60 dark:text-zinc-400 mt-2.5 pt-2 border-t border-gray-100 dark:border-zinc-800 line-clamp-3 leading-relaxed">
+                    <p className="text-[10px] sm:text-[11px] text-textLight/60 dark:text-zinc-400 mt-2 pt-2 border-t border-gray-100 dark:border-zinc-800 line-clamp-3 leading-relaxed">
                       {leader.bio}
                     </p>
                   </div>

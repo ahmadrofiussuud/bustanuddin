@@ -169,13 +169,16 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`relative px-3.5 py-2 text-sm font-semibold transition-all duration-200 rounded-lg hover:text-accent ${
+                    className={`relative px-3.5 py-2 text-sm font-bold transition-all duration-200 rounded-lg ${
                       isActive
-                        ? "text-primary bg-lightAccent/40 font-bold"
-                        : "text-textLight/80 hover:bg-lightAccent/20"
+                        ? "text-accent bg-accent/5 font-extrabold"
+                        : "text-textLight/80 hover:bg-lightAccent/20 hover:text-accent"
                     }`}
                   >
                     {link.label}
+                    {isActive && (
+                      <span className="absolute bottom-1 left-3.5 right-3.5 h-[2.5px] bg-accent rounded-full animate-fade-in" />
+                    )}
                   </Link>
                 );
               })}
@@ -274,7 +277,7 @@ export default function Navbar() {
                     href={link.href}
                     className={`block px-4 py-3 text-base font-bold rounded-xl transition-all ${
                       isActive
-                        ? "bg-lightAccent text-primary"
+                        ? "bg-accent/10 text-accent font-extrabold border-l-4 border-accent pl-3"
                         : "text-textLight hover:bg-gray-50 hover:text-accent"
                     }`}
                   >
