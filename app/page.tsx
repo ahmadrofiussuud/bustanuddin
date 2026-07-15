@@ -268,9 +268,12 @@ export default function Home() {
           2. OVERLAPPING FEATURE CARDS
           ========================================== */}
       <section className="relative z-30 -mt-24 lg:-mt-28 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div 
+          className="flex overflow-x-auto snap-x snap-mandatory pb-6 gap-6 -mx-4 px-4 md:mx-0 md:px-0 md:pb-0 md:grid md:grid-cols-2 lg:grid-cols-4" 
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
           {/* Card 1 */}
-          <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div className="shrink-0 w-[280px] sm:w-[320px] md:w-auto snap-center bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
             <div className="flex justify-between items-start">
               <div className="h-12 w-12 rounded-2xl bg-lightAccent text-primary flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors duration-300">
                 <GraduationCap className="h-6 w-6" />
@@ -288,7 +291,7 @@ export default function Home() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div className="shrink-0 w-[280px] sm:w-[320px] md:w-auto snap-center bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
             <div className="flex justify-between items-start">
               <div className="h-12 w-12 rounded-2xl bg-lightAccent text-primary flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors duration-300">
                 <Presentation className="h-6 w-6" />
@@ -306,7 +309,7 @@ export default function Home() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div className="shrink-0 w-[280px] sm:w-[320px] md:w-auto snap-center bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
             <div className="flex justify-between items-start">
               <div className="h-12 w-12 rounded-2xl bg-lightAccent text-primary flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors duration-300">
                 <Library className="h-6 w-6" />
@@ -324,7 +327,7 @@ export default function Home() {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
+          <div className="shrink-0 w-[280px] sm:w-[320px] md:w-auto snap-center bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-gray-100/50 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1">
             <div className="flex justify-between items-start">
               <div className="h-12 w-12 rounded-2xl bg-lightAccent text-primary flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors duration-300">
                 <Coins className="h-6 w-6" />
