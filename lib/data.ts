@@ -77,14 +77,14 @@ export const mockTestimonials = [
     name: "Budi Santoso",
     role: "Orang Tua Siswa (Wali Murid Kelas III)",
     content: "Sangat bersyukur menyekolahkan anak saya di SD Bustanuddin. Selain unggul dalam pembentukan calistung dasar, sekolah ini juga sangat fokus pada pengembangan akhlak anak sejak dini.",
-    avatar: "https://images.unsplash.com/photo-1607990283143-e81e7a2c93ab?q=80&w=150&auto=format&fit=crop"
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop"
   },
   {
     id: "testi-2",
     name: "Dr. Siti Rahmawati",
     role: "Alumni 2010 (Dokter Anak)",
     content: "Pondasi kedisiplinan, kejujuran, dan pembiasaan ibadah yang diajarkan sejak di SD Bustanuddin sangat membantu membentuk integritas diri saya hingga kini.",
-    avatar: "https://images.unsplash.com/photo-1594824813573-246434de83fb?q=80&w=150&auto=format&fit=crop"
+    avatar: "https://images.unsplash.com/photo-1594744803329-e58b31de215f?q=80&w=150&auto=format&fit=crop"
   },
   {
     id: "testi-3",
@@ -169,13 +169,13 @@ export const timKepemimpinan = [
   {
     name: "Dr. H. Ahmad Sunaryo, M.Pd.",
     role: "Kepala Sekolah",
-    image: "https://images.unsplash.com/photo-1607990283143-e81e7a2c93ab?q=80&w=250&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=250&auto=format&fit=crop",
     bio: "Berpengalaman lebih dari 25 tahun mengelola pendidikan dasar dasar. Berdedikasi mencetak generasi berkarakter sejak dini."
   },
   {
     name: "Dra. Hajah Martini",
     role: "Wakasek Bidang Kurikulum",
-    image: "https://images.unsplash.com/photo-1594824813573-246434de83fb?q=80&w=250&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=250&auto=format&fit=crop",
     bio: "Perancang transisi metode PAUD-SD menyenangkan dan koordinator implementasi Kurikulum Merdeka SD."
   },
   {
@@ -193,7 +193,7 @@ export const timKepemimpinan = [
   {
     name: "Siti Aisyah, S.Sos.",
     role: "Wakasek Bidang Hubungan Masyarakat",
-    image: "https://images.unsplash.com/photo-1580894732444-8fecef2271d4?q=80&w=250&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=250&auto=format&fit=crop",
     bio: "Menjembatani kemitraan erat dengan persatuan orang tua siswa (POMG) demi menyelaraskan pendidikan rumah-sekolah."
   },
   {
@@ -357,7 +357,7 @@ export const fasilitasList = [
   {
     name: "Masjid Baitul Ilmu",
     desc: "Masjid yang bersih dan sejuk sebagai sarana praktek shalat dhuha/dhuhur berjamaah, hafalan juz amma, serta kajian akhlak mulia.",
-    image: "https://images.unsplash.com/photo-1590075865003-e48277adc558?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=800&auto=format&fit=crop"
   },
   {
     name: "Unit Kesehatan Sekolah & Dokter Kecil",
@@ -367,7 +367,7 @@ export const fasilitasList = [
   {
     name: "Kantin Sehat Higienis",
     desc: "Kantin bersih yang menjual makanan dan minuman sehat bergizi, bebas pengawet, pemanis buatan, serta zat aditif berbahaya.",
-    image: "https://images.unsplash.com/photo-1567521464027-f127ff1443cd?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop"
   },
   {
     name: "Ruang Konseling & Bimbingan Anak",
@@ -428,7 +428,7 @@ export const beritaPageList = [
     category: "Berita",
     date: "25 April 2026",
     excerpt: "Kabar gembira datang dari lapangan futsal, tim sepakbola kategori umur 12 tahun sekolah berhasil meraih juara satu turnamen piala dinas pendidikan kota...",
-    image: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1431324155629-1a6edd1d141d?q=80&w=800&auto=format&fit=crop",
     slug: "tim-futsal-u12-juara-1"
   },
   {
@@ -459,7 +459,7 @@ export const kalenderAkademikSidebar = [
 export const galeriItems = [
   { id: 1, title: "Pembelajaran Interaktif Mewarnai", category: "Akademik", image: "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=800&auto=format&fit=crop" },
   { id: 2, title: "Latihan Komputer Dasar Anak", category: "Akademik", image: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=800&auto=format&fit=crop" },
-  { id: 3, title: "Turnamen Sepakbola Mini Ceria", category: "Olahraga", image: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop" },
+  { id: 3, title: "Turnamen Sepakbola Mini Ceria", category: "Olahraga", image: "https://images.unsplash.com/photo-1431324155629-1a6edd1d141d?q=80&w=800&auto=format&fit=crop" },
   { id: 4, title: "Latihan Senam Irama Anak", category: "Olahraga", image: "https://images.unsplash.com/photo-1544698310-74ea9d1c8258?q=80&w=800&auto=format&fit=crop" },
   { id: 5, title: "Pameran Kreasi Tanah Liat Mewarnai", category: "Seni", image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800&auto=format&fit=crop" },
   { id: 6, title: "Latihan Bermain Angklung Sekolah", category: "Seni", image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=800&auto=format&fit=crop" },
